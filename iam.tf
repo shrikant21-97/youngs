@@ -1,4 +1,4 @@
-resource "aws iam-role" "our-iam-role" {
+resource "aws_iam_role" "our_iam_role" {
   name = "terraformadmin"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -14,7 +14,7 @@ resource "aws iam-role" "our-iam-role" {
     ]
   })
 }
-resource "aws_iam_role_policy_attachment" "our-iam-role-attach" {
+resource "aws_iam_role_policy_attachment" "our_iam_role_attach" {
   role       = aws_iam_role.our-iam-role.name
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 

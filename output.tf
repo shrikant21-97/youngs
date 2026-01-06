@@ -1,10 +1,10 @@
 output "vpc_id" {
   value = aws.our_vpc
 }
-output "Instance_id" {
+output "Instance_id1" {
   value = aws_instance.sonar-server.id
 }
-output "Instance_id" {
+output "Instance_id2" {
     value = aws_instance.jenkins-server.id
 
 }
